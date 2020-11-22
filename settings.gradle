@@ -1,0 +1,6 @@
+include ':FingerprintIdentifyLib'
+include ':finger'
+include ':fingermanager'
+include ':okhttputils'
+include ':diary'
+rootProject.name = "Application"

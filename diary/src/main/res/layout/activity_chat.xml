@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+    <RelativeLayout
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:id="@+id/ly_chat_top"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white">
+        <ImageButton
+            android:id="@+id/btn_chat_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/back"
+            android:background="@color/white"
+            android:scaleType="centerInside"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:id="@+id/tv_chat_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:text="张三"
+            android:textSize="18sp"
+            android:layout_toRightOf="@id/btn_chat_back"
+            android:textColor="@color/textColor"
+            android:layout_centerVertical="true"/>
+
+        <ImageButton
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/btn_list"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@color/white"
+            android:scaleType="centerInside"
+            android:paddingRight="5dp"
+            />
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/msg_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ly_chat_top"
+        android:layout_above="@id/ly_chat_bottom"
+        android:gravity="center"/>
+
+    <RelativeLayout
+        android:id="@+id/ly_chat_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bottom_bgcolor"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+
+        >
+
+        <ImageButton
+            android:id="@+id/btn_chat_voice"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:background="@color/bottom_bgcolor"
+            android:src="@drawable/btn_voice"
+            android:scaleType="centerInside"
+            android:layout_alignParentLeft="true"
+
+            />
+        <Space
+            android:id="@+id/space_wechat"
+            android:layout_width="10dp"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@id/btn_chat_voice"
+
+            />
+        <EditText
+            android:id="@+id/input_text"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@id/space_wechat"
+            android:layout_toLeftOf="@id/space3_wechat"
+            android:background="#FFFFFF"
+            android:layout_centerVertical="true"
+            android:paddingLeft="20dp"
+            />
+
+        <Space
+            android:id="@+id/space3_wechat"
+            android:layout_width="10dp"
+            android:layout_height="30dp"
+            android:layout_toLeftOf="@id/btn_chat_face"
+
+            />
+
+        <ImageButton
+            android:id="@+id/btn_chat_face"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/btn_face"
+            android:scaleType="centerInside"
+            android:layout_toLeftOf="@+id/space2_wechat"
+
+            />
+
+        <Space
+            android:id="@+id/space2_wechat"
+            android:layout_width="10dp"
+            android:layout_height="30dp"
+            android:layout_toLeftOf="@id/btn_chat_send"
+
+            />
+
+        <ImageButton
+            android:id="@+id/btn_chat_send"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/btn_send"
+            android:scaleType="centerInside"
+            android:layout_alignParentRight="true"
+
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

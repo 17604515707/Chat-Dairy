@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="42dp"
+    android:background="@color/bottom_bgcolor"
+    android:padding="8dp">
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="日记本"
+        android:layout_centerVertical="true"
+        android:paddingLeft="5dp"
+        android:textColor="#1c1c1c"
+        android:textSize="16sp"/>
+
+    <ImageButton
+        android:id="@+id/btn_menu"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:scaleType="centerInside"
+        android:background="@color/bottom_bgcolor"
+        android:src="@drawable/btn_menu"
+
+    />
+
+    <ImageButton
+        android:id="@+id/btn_search"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_toLeftOf="@id/btn_menu"
+        android:layout_alignBottom="@id/btn_menu"
+        android:scaleType="centerInside"
+        android:background="@color/bottom_bgcolor"
+        android:src="@drawable/btn_search"
+        android:paddingRight="15dp"
+        />
+
+</RelativeLayout>

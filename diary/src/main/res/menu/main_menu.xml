@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <item
+        android:id="@+id/menu_item_set_diary"
+        android:icon="@drawable/find_press"
+        android:orderInCategory="100"
+        android:title="写日记"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/menu_item_get_friend"
+        android:icon="@drawable/find_press"
+        android:orderInCategory="100"
+        android:title="添加朋友"
+        app:showAsAction="withText"
+        />
+    <item
+        android:id="@+id/menu_item_help"
+        android:icon="@drawable/find_press"
+        android:orderInCategory="100"
+        android:title="帮助与反馈"
+        app:showAsAction="never"
+        />
+</menu>

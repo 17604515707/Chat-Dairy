@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/diary_list"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/rv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:text="TextView"
+        android:textColor="#1c1c1c"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/rv_context"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:text="TextView"
+        android:textColor="#1c1c1c"
+        android:textSize="13sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp">
+        <TextView
+            android:id="@+id/rv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="TextView"
+            android:textColor="#959393"
+            android:textSize="12sp" />
+        <com.xuexiang.xui.widget.button.shinebutton.ShineButton
+            android:layout_marginRight="10dp"
+            android:id="@+id/shine_button"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            app:sb_allow_random_color="true"
+            app:sb_checked_color="#f26d7d"
+            app:sb_icon_image="@drawable/ic_like"
+            app:sb_normal_color="@android:color/darker_gray" />
+        <com.xuexiang.xui.widget.button.shinebutton.ShineButton
+            android:layout_marginRight="10dp"
+            android:id="@+id/shine_star"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            app:sb_allow_random_color="true"
+            app:sb_checked_color="#f26d7d"
+            app:sb_icon_image="@drawable/ic_star"
+            app:sb_normal_color="@android:color/darker_gray" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
